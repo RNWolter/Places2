@@ -1,5 +1,5 @@
 //
-//  PlacesTabBarController.swift
+//  VisitedPlacesViewController.swift
 //  Places2
 //
 //  Created by Rick Wolter on 9/6/18.
@@ -8,8 +8,13 @@
 
 import UIKit
 
-class PlacesTabBarController: UITabBarController {
+class VisitedPlacesViewController: UIViewController, PlacesPresenter {
 
+    
+    var placeController: PlaceController?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

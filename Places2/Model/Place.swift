@@ -14,11 +14,11 @@ struct Place {
     let name: String
     let location: (latitude: Double, longitude: Double)
     
-    init(name: String, latitude: Double, longitude: Double)
+    init(name: String, latitude: Double, longitude: Double){
     
     
     self.name = name
     self.location = (latitude: latitude, longitude: longitude)
-
+    }
     
 }

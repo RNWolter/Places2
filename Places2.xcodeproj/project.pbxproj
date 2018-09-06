@@ -20,6 +20,7 @@
 		1CFF75F1214197DE0026B153 /* CreateNewPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF75F0214197DE0026B153 /* CreateNewPlacesViewController.swift */; };
 		1CFF75F3214197F40026B153 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF75F2214197F40026B153 /* VisitedPlacesViewController.swift */; };
 		1CFF75F5214199590026B153 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF75F4214199590026B153 /* PlaceController.swift */; };
+		1CFF75F921419CEC0026B153 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF75F821419CEC0026B153 /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1CFF75F0214197DE0026B153 /* CreateNewPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlacesViewController.swift; sourceTree = "<group>"; };
 		1CFF75F2214197F40026B153 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		1CFF75F4214199590026B153 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		1CFF75F821419CEC0026B153 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,11 @@
 		1CFF75CC21418DA20026B153 /* Places2 */ = {
 			isa = PBXGroup;
 			children = (
+				1CFF75FA21419D300026B153 /* Protocol */,
 				1CFF75CD21418DA20026B153 /* AppDelegate.swift */,
 				1CFF75E12141901A0026B153 /* StoryBoards */,
 				1CFF75E22141903F0026B153 /* Resources */,
+				1CFF75F721419AAF0026B153 /* ViewControllers */,
 				1CFF75E7214195680026B153 /* Model */,
 			);
 			path = Places2;
@@ -101,15 +105,30 @@
 		1CFF75E7214195680026B153 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CFF75E52141954C0026B153 /* Place.swift */,
+				1CFF75F4214199590026B153 /* PlaceController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CFF75F721419AAF0026B153 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				1CFF75EA214197530026B153 /* PlacesTabBarController.swift */,
 				1CFF75EC214197870026B153 /* MapViewController.swift */,
 				1CFF75EE214197AA0026B153 /* PlacesTableViewController.swift */,
-				1CFF75E52141954C0026B153 /* Place.swift */,
-				1CFF75F4214199590026B153 /* PlaceController.swift */,
-				1CFF75F0214197DE0026B153 /* CreateNewPlacesViewController.swift */,
 				1CFF75F2214197F40026B153 /* VisitedPlacesViewController.swift */,
+				1CFF75F0214197DE0026B153 /* CreateNewPlacesViewController.swift */,
 			);
-			path = Model;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1CFF75FA21419D300026B153 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF75F821419CEC0026B153 /* PlacesPresenter.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CFF75EB214197530026B153 /* PlacesTabBarController.swift in Sources */,
+				1CFF75F921419CEC0026B153 /* PlacesPresenter.swift in Sources */,
 				1CFF75F5214199590026B153 /* PlaceController.swift in Sources */,
 				1CFF75CE21418DA20026B153 /* AppDelegate.swift in Sources */,
 				1CFF75E62141954C0026B153 /* Place.swift in Sources */,
