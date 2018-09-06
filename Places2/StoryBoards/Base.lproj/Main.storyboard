@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Add Location-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Places2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CreateNewPlacesViewController" customModule="Places2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,16 +48,16 @@
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="uuh-aX-cGz"/>
+                    <tabBarItem key="tabBarItem" title="Add Location" id="uuh-aX-cGz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966" y="-779"/>
         </scene>
-        <!--Item-->
+        <!--Places-->
         <scene sceneID="HIf-dN-rT1">
             <objects>
-                <viewController id="Ydu-dT-YwC" sceneMemberID="viewController">
+                <viewController id="Ydu-dT-YwC" customClass="VisitedPlacesViewController" customModule="Places2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="caQ-Gc-6Jf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AUH-OF-EpK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="O4m-OP-66z"/>
+                    <tabBarItem key="tabBarItem" title="Places" id="O4m-OP-66z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Nr-ZG-pXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="2315" y="-491"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Places Tab Bar Controller-->
         <scene sceneID="gzJ-eS-kSY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ffs-qX-Wyu" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ffs-qX-Wyu" customClass="PlacesTabBarController" customModule="Places2" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3GJ-Gk-WZy">
                         <autoresizingMask key="autoresizingMask"/>
